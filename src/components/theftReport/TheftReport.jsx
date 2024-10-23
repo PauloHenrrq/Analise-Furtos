@@ -1,33 +1,59 @@
 import React from 'react';
-import './TheftReport.css'; // Certifique-se de que o arquivo TheftReport.css exista
+import './TheftReport.css'; // Verifique o caminho correto do arquivo CSS
 
 const TheftReport = () => {
   return (
     <div className="theft-report-container">
-      <header className="theft-report-header">
-        <h1>Relatório de Furtos</h1>
-        <nav className="theft-report-nav">
-          <ul>
-            {Array.from({ length: 10 }, (_, i) => (
-              <li key={i}>
-                <a href={`#grafico0${i + 1}`}>Furtos 0{i + 1}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <header className="header">
+        <div className="container">
+          <div className="navbar">
+            <div className="logo-section">
+              <a href="#" className="logo">
+                <img src="Logos/image/Logo-st.png" alt="Logo da Polícia" />
+              </a>
+            </div>
+            <nav>
+              <ul className="nav-links">
+                <li><a href="#grafico01">Início</a></li>
+                <li><a href="#grafico02">Relatórios</a></li>
+                <li><a href="#grafico03">Estatísticas</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
 
+      <section className="hero">
+        <div className="container hero-content">
+          <div className="hero-text">
+            <h1 className="subtitle">RELATÓRIO DE FURTOS<br /> DA CIDADE</h1>
+            <p>
+              Este é o sistema oficial de relatórios de furtos.<br />
+              Aqui você pode encontrar estatísticas detalhadas e relatórios sobre os casos registrados.
+            </p>
+            <a href="#grafico02" className="btn-schedule">VER RELATÓRIOS</a>
+          </div>
+          <div className="hero-image">
+            <img src="Logos/image/police-theme.png" alt="Imagem temática policial" />
+          </div>
+        </div>
+      </section>
+
       <main className="theft-report-main">
-        {Array.from({ length: 10 }, (_, i) => (
-          <section key={i} id={`grafico0${i + 1}`} className="theft-report-section">
-            <h2>Gráfico de Furtos 0{i + 1}</h2>
-            <div className="chart">Gráfico 0{i + 1} aqui</div>
-          </section>
-        ))}
+        <section id="grafico01">
+          <h2>Estatísticas de Furtos</h2>
+          <div className="chart">Gráfico de Furtos aqui</div>
+        </section>
+        <section id="grafico02">
+          <h2>Relatórios de Furtos</h2>
+          <div className="chart">Outro gráfico aqui</div>
+        </section>
       </main>
 
-      <footer className="theft-report-footer">
-        <p>&copy; 2024 Relatório de Furtos - Todos os direitos reservados.</p>
+      <footer className="footer">
+        <div className="container">
+          <p>&copy; 2024 Relatório de Furtos - Todos os direitos reservados.</p>
+        </div>
       </footer>
     </div>
   );
