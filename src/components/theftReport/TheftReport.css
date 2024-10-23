@@ -1,65 +1,62 @@
-* {
-    box-sizing: border-box;
+.theft-report-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fundo claro */
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-  }
-  
-  .header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
+  .theft-report-header {
+    background-color: #4a90e2; /* Cor de fundo do cabeçalho */
+    color: #ffffff; /* Texto branco */
+    padding: 20px;
     text-align: center;
   }
   
-  .nav ul {
-    list-style: none;
+  .theft-report-nav ul {
+    list-style-type: none;
     padding: 0;
   }
   
-  .nav li {
-    display: inline;
-    margin: 0 15px;
+  .theft-report-nav li {
+    display: inline; /* Navegação horizontal */
+    margin: 0 10px;
   }
   
-  .nav a {
-    color: white;
+  .theft-report-nav a {
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
   }
   
-  .nav a:hover {
-    text-decoration: underline;
+  .theft-report-nav a:hover {
+    text-decoration: underline; /* Efeito de hover */
   }
   
-  main {
-    margin: 20px 0;
+  .theft-report-main {
+    margin-top: 20px;
+  }
+  
+  .theft-report-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #dddddd; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    background-color: #ffffff; /* Fundo branco para seções */
   }
   
   .chart {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    height: 300px; /* Altura fixa para gráficos */
+    background-color: #e0e0e0; /* Cor de fundo para espaços reservados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .footer {
+  .theft-report-footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #007bff;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
   }
   

@@ -1,42 +1,32 @@
 import React from 'react';
-import './TheftReport.css'; // Certifique-se de criar um arquivo styles.css
+import './TheftReport.css'; // Certifique-se de que o arquivo TheftReport.css exista
 
 const TheftReport = () => {
   return (
-    <div className="container">
-      <header className="header">
+    <div className="theft-report-container">
+      <header className="theft-report-header">
         <h1>Relatório de Furtos</h1>
-        <nav className="nav">
+        <nav className="theft-report-nav">
           <ul>
-            <li><a href="#grafico01">Furtos 01</a></li>
-            <li><a href="#grafico02">Furtos 02</a></li>
-            <li><a href="#grafico03">Furtos 03</a></li>
-            <li><a href="#grafico04">Furtos 04</a></li>
-            <li><a href="#grafico05">Furtos 05</a></li>
-            <li><a href="#grafico06">Furtos 06</a></li>
-            <li><a href="#grafico07">Furtos 07</a></li>
-            <li><a href="#grafico08">Furtos 08</a></li>
-            <li><a href="#grafico09">Furtos 09</a></li>
-            <li><a href="#grafico10">Furtos 10</a></li>
+            {Array.from({ length: 10 }, (_, i) => (
+              <li key={i}>
+                <a href={`#grafico0${i + 1}`}>Furtos 0{i + 1}</a>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>
 
-      <main>
-        <section id="grafico01">
-          <h2>Gráfico de Furtos 01</h2>
-          {/* Espaço reservado para o Gráfico */}
-          <div className="chart">Gráfico 01 aqui</div>
-        </section>
-        <section id="grafico02">
-          <h2>Gráfico de Furtos 02</h2>
-          {/* Espaço reservado para o Gráfico */}
-          <div className="chart">Gráfico 02 aqui</div>
-        </section>
-        {/* Adicione mais seções para os outros gráficos */}
+      <main className="theft-report-main">
+        {Array.from({ length: 10 }, (_, i) => (
+          <section key={i} id={`grafico0${i + 1}`} className="theft-report-section">
+            <h2>Gráfico de Furtos 0{i + 1}</h2>
+            <div className="chart">Gráfico 0{i + 1} aqui</div>
+          </section>
+        ))}
       </main>
 
-      <footer className="footer">
+      <footer className="theft-report-footer">
         <p>&copy; 2024 Relatório de Furtos - Todos os direitos reservados.</p>
       </footer>
     </div>
