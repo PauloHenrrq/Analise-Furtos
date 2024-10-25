@@ -4,28 +4,13 @@ import './TheftReport.css'; // Verifique o caminho correto do arquivo CSS
 const TheftReport = () => {
   return (
     <div className="theft-report-container">
-      <header className="header">
-        <div className="container">
-          <div className="navbar">
-            <div className="logo-section">
-            </div>
-            <nav>
-              <ul className="nav-links">
-                <li><a href="#grafico01">Início</a></li>
-                <li><a href="#grafico02">Relatórios</a></li>
-                <li><a href="#grafico03">Estatísticas</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
 
       <section className="hero">
         <div className="container hero-content">
           <div className="hero-text">
-            <h1 className="subtitle">RELATÓRIO DE FURTOS<br /> DA CIDADE</h1>
+            <h1 className="subtitle">RELATÓRIO DE FURTOS<br /> EM FORTALEZA</h1>
             <p>
-              Este é o sistema oficial de relatórios de furtos.<br />
+              Este é o sistema oficial de relatórios de furtos em fortaleza.<br />
               Aqui você pode encontrar estatísticas detalhadas e relatórios sobre os casos registrados.
             </p>
             <a href="#grafico02" className="btn-schedule">VER RELATÓRIOS</a>

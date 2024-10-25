@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Configurações globais do corpo */
+body {
+    background-color: #0b0e15;
+    /* Fundo escuro e sério */
+    color: white;
+    line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor de fundo do scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #0b0e15;
+}
+
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #f0ad4e;
+    border-radius: 6px;
+    /* Deixe mais arredondado */
+}
