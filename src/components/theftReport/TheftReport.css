@@ -13,6 +13,21 @@ body {
     line-height: 1.6;
 }
 
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+  }
+  
+  /* Cor de fundo do scrollbar */
+  ::-webkit-scrollbar-track {
+    background-color: #0b0e15;
+  }
+  
+  /* Cor da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #f0ad4e;
+    border-radius: 6px; /* Deixe mais arredondado */
+  }
+
 .theft-report-container {
     min-height: 100vh;
     display: flex;
@@ -38,7 +53,8 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 60px;
+    margin-right: 30px;
 }
 
 .nav-links li a {

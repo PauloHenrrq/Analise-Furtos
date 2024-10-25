@@ -8,9 +8,6 @@ const TheftReport = () => {
         <div className="container">
           <div className="navbar">
             <div className="logo-section">
-              <a href="#" className="logo">
-                <img src="Logos/image/Logo-st.png" alt="Logo da Polícia" />
-              </a>
             </div>
             <nav>
               <ul className="nav-links">
@@ -32,9 +29,6 @@ const TheftReport = () => {
               Aqui você pode encontrar estatísticas detalhadas e relatórios sobre os casos registrados.
             </p>
             <a href="#grafico02" className="btn-schedule">VER RELATÓRIOS</a>
-          </div>
-          <div className="hero-image">
-            <img src="Logos/image/police-theme.png" alt="Imagem temática policial" />
           </div>
         </div>
       </section>
