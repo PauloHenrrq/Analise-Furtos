@@ -14,6 +14,12 @@ body {
     line-height: 1.6;
 }
 
+:root {
+    
+    --primary: #0b0e15;
+    --secondary: #f0ad4e;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     /* Largura da barra de rolagem */

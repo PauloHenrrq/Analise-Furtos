@@ -1,7 +1,8 @@
 .header {
-    background-color: #1f2d3d;
+    background-color: #1f2D3d;
+    height: 70px;
     /* Fundo mais escuro para o cabeçalho */
-    padding: 20px 0;
+    padding: 10px;
 
     .navbar {
         display: flex;
@@ -29,7 +30,6 @@
 
     .nav-links li a:hover {
         color: #f0ad4e;
-        /* Cor de destaque no hover */
         border-bottom: 3px solid #f0ad4e;
     }
 }

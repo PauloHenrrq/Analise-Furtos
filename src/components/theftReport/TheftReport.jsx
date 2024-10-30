@@ -17,23 +17,9 @@ const TheftReport = () => {
           </div>
         </div>
       </section>
-
-      <main className="theft-report-main">
-        <section id="grafico01">
-          <h2>Estatísticas de Furtos</h2>
-          <div className="chart">Gráfico de Furtos aqui</div>
-        </section>
-        <section id="grafico02">
-          <h2>Relatórios de Furtos</h2>
-          <div className="chart">Outro gráfico aqui</div>
-        </section>
-      </main>
-
-      <footer className="footer">
-        <div className="container">
-          <p>&copy; 2024 Relatório de Furtos - Todos os direitos reservados.</p>
-        </div>
-      </footer>
+      <div className="linha">
+        <hr />
+      </div>
     </div>
   );
 };
