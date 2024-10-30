@@ -1,12 +1,11 @@
+import './header.css';
+
 export default function Header() {
     return (
         <header className="header">
             <div className="container">
                 <div className="navbar">
                     <div className="logo-section">
-                        <a href="#home">
-                            <img src="/src/assets/logo.png" alt="Logo" className="logo-img" />
-                        </a>
                     </div>
                     <nav>
                         <ul className="nav-links">
