@@ -3,17 +3,16 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Carousel.css';
 
-import SetaDireita from '../../assets/SetaDireita.png'
-import SetaEsquerda from '../../assets/SetaEsquerda.png'
+import SetaDireita from '../../assets/SetaDireita.png';
+import SetaEsquerda from '../../assets/SetaEsquerda.png';
 
-import GraficoCalor from '../../assets/Graficos/Graficos Globais/MapaDeCalor.png'
-import GraficoPizza from '../../assets/Graficos/Graficos Globais/GraficoPizza.png'
-import GraficoAIS from '../../assets/Graficos/Graficos Globais/OcorrenciaAIS.png'
-import GraficoSemana from '../../assets/Graficos/Graficos Globais/OcorrenciaSemana.png'
-import GraficoData from '../../assets/Graficos/Graficos Globais/OcorrenciaData.png'
+import GraficoCalor from '../../assets/Graficos/Graficos Globais/MapaDeCalor.png';
+import GraficoPizza from '../../assets/Graficos/Graficos Globais/GraficoPizza.png';
+import GraficoAIS from '../../assets/Graficos/Graficos Globais/OcorrenciaAIS.png';
+import GraficoSemana from '../../assets/Graficos/Graficos Globais/OcorrenciaSemana.png';
+import GraficoData from '../../assets/Graficos/Graficos Globais/OcorrenciaData.png';
 
 export default function Gallery() {
-
     const [activeIndex, setActiveIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
@@ -54,7 +53,14 @@ export default function Gallery() {
                 <Carousel.Item>
                     <div className='galleryPrincipal'>
                         <div className='galleryExtra'>
-
+                            <img src={GraficoSemana} alt="Gráfico de Ocorrências por Semana" />
+                        </div>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <div className='galleryPrincipal'>
+                        <div className='galleryExtra'>
+                            <img src={GraficoData} alt="Gráfico de Ocorrências por Data" />
                         </div>
                     </div>
                 </Carousel.Item>
