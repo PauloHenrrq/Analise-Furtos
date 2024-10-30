@@ -1,19 +1,24 @@
 import React from 'react';
-import TheftReport from './components/theftReport/TheftReport';
-import Header from './components/header/header';
-import './App.css';
-import Carrossel from './components/carousel/Carousel';
-import Footer from './components/Footer/Footer';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/header';
+import Footer from './components/Footer';
+import TheftReport from './components/theftReport';
+import Carrossel from './components/Carrossel';
+import NewPage from './components/NewPage';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <TheftReport />
-      <Carrossel />
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<TheftReport />} />
+          <Route path="/carrossel" element={<Carrossel />} />
+          <Route path="/nova-pagina" element={<NewPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
