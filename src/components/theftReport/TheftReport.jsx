@@ -15,6 +15,7 @@ const TheftReport = () => {
             </p>
             <a href="#grafico02" className="btn-schedule">VER RELATÓRIOS</a>
           </div>
+          <img className="Corte" src="/src/assets/ais/logo-pmce.png" style={{ width: "250px", height: "auto",marginTop: "-26px"  }} alt="" />
         </div>
       </section>
     </div>
