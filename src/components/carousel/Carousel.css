@@ -1,6 +1,6 @@
 .carousel-container {
     position: relative;
-    background: radial-gradient(circle, #13072e, black);
+    background: radial-gradient(circle, #13072e);
 }
 
 .carousel-container h1 {

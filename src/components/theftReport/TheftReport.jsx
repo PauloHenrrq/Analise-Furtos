@@ -17,9 +17,6 @@ const TheftReport = () => {
           </div>
         </div>
       </section>
-      <div className="linha">
-        <hr />
-      </div>
     </div>
   );
 };
