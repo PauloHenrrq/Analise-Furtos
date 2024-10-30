@@ -45,8 +45,8 @@
 
 .btn-schedule {
     padding: 15px 30px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #443ad4;
+    color: #ffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
@@ -54,6 +54,10 @@
     transition: background-color 0.3s ease;
 }
 
+
 .btn-schedule:hover {
-    background-color: #443ad4;
+    background-color: #000;
+    color: #ffff;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
 }

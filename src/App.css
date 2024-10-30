@@ -30,7 +30,7 @@ body {
 
 /* Cor da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: #f0ad4e;
+    background-color: #443ad4;
     border-radius: 6px;
     /* Deixe mais arredondado */
 }
