@@ -1,5 +1,5 @@
 .header {
-    background-color: #1f2d3d;
+    background: radial-gradient(circle, #13072e, black);
     padding: 20px 0;
 }
 
@@ -37,6 +37,6 @@
 }
 
 .nav-links li a:hover {
-    color: #f0ad4e; 
-    border-bottom: 3px solid #f0ad4e;
+    color: #029121; 
+    border-bottom: 3px solid #ffffff;
 }

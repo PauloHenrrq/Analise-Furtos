@@ -6,10 +6,11 @@
 
 /* Seção hero - A primeira parte do site */
 .hero {
-    background: linear-gradient(to bottom, #1f2d3d, #0b0e15);
+    background: radial-gradient(circle, #13072e, black);
     padding: 50px 0;
     color: white;
 }
+
 
 .hero-content {
     display: flex;

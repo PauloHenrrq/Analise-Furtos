@@ -1,5 +1,5 @@
 .footer {
-    background-color: #1f2d3d;
+    background: radial-gradient(circle, #13072e, black);
     text-align: center;
     padding: 20px 0;
 
@@ -11,6 +11,6 @@
 }
 
 .footer p {
-    color: #f0ad4e;
+    color: #fcfcfc;
     font-size: 1rem;
 }
