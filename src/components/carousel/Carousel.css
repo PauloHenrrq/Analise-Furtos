@@ -4,7 +4,6 @@
 }
 
 .carousel-container h1 {
-    background-color: var(--primary);
     margin: 0;
     text-align: center;
     color: #ffffff;
@@ -18,7 +17,6 @@
 .galleryPrincipal {
     height: 681px;
     padding: 50px 0 0 0;
-    background-color: var(--primary);
 
     .galleryExtra {
         display: flex;
@@ -53,11 +51,11 @@ a .carousel-control-next-icon,
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #5b3603;
+    background-color: #000000;
     border: none;
     cursor: pointer;
 }
 
 .indicator-btn.active {
-    background-color: var(--secondary);
+    background-color: #443ad4;
 }

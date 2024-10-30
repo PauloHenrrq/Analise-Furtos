@@ -8,14 +8,12 @@
 
 /* Configurações globais do corpo */
 body {
-    background-color: #0b0e15;
-    /* Fundo escuro e sério */
+    background: radial-gradient(circle, #13072e, black); /* Fundo com gradiente radial */
     color: white;
     line-height: 1.6;
 }
 
 :root {
-    
     --primary: #0b0e15;
     --secondary: #f0ad4e;
 }
