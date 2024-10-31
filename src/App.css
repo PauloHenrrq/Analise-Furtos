@@ -8,9 +8,24 @@
 
 /* Configurações globais do corpo */
 body {
-    background: radial-gradient(circle, #13072e, black); /* Fundo com gradiente radial */
+    background: radial-gradient(circle, #13072e, black);
+    /* Fundo com gradiente radial */
     color: white;
     line-height: 1.6;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
 }
 
 :root {

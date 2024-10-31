@@ -13,7 +13,7 @@ const TheftReport = () => {
               Este é o sistema oficial de relatórios de furtos em fortaleza.<br />
               Aqui você pode encontrar estatísticas detalhadas e relatórios sobre os casos registrados.
             </p>
-            <a href="#grafico02" className="btn-schedule">VER RELATÓRIOS</a>
+            <a href="https://colab.research.google.com/drive/1Ig9-MdZs79C9ZDlt_Y16HaVQdsC_M8eT?usp=sharing"  target='_blank' className="btn-schedule">VER DADOS</a>
           </div>
           <img className="Corte" src="/src/assets/ais/logo-pmce.png" style={{ width: "250px", height: "auto",marginTop: "-26px"  }} alt="" />
         </div>

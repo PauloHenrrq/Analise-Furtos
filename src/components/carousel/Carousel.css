@@ -15,7 +15,7 @@
 }
 
 .galleryPrincipal {
-    height: 681px;
+    height: 655px;
     padding: 50px 0 0 0;
 
     .galleryExtra {
@@ -44,14 +44,14 @@ a .carousel-control-next-icon,
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 53px;
+    margin-bottom: 33px;
 }
 
 .indicator-btn {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #0f0d30;
     border: none;
     cursor: pointer;
 }

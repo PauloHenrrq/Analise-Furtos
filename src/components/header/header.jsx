@@ -14,10 +14,8 @@ const Header = () => {
           <nav>
             <ul className="nav-links">
               <li><Link to="/">Início</Link></li>
-              <li><Link to="/relatorios">Relatórios</Link></li>
-              <li><Link to="/estatisticas">Estatísticas</Link></li>
-              <li><Link to="/carrossel">Carrossel</Link></li>
-              <li><Link to="/nova-pagina">AIS</Link></li> {<NewPage/>}
+              <li><Link to="/carrossel">Gráficos Gerais</Link></li>
+              <li><Link to="/nova-pagina">Gráficos AIS</Link></li>
             </ul>
           </nav>
         </div>

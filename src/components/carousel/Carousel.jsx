@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Carousel.css';
 
 import SetaDireita from '../../assets/SetaDireita.png';
 import SetaEsquerda from '../../assets/SetaEsquerda.png';
+import BalaoI from '../../assets/balao-de-fala.png';
 
 import GraficoCalor from '../../assets/Graficos/Graficos Globais/MapaDeCalor.png';
 import GraficoPizza from '../../assets/Graficos/Graficos Globais/GraficoPizza.png';
@@ -13,6 +15,11 @@ import GraficoSemana from '../../assets/Graficos/Graficos Globais/OcorrenciaSema
 import GraficoData from '../../assets/Graficos/Graficos Globais/OcorrenciaData.png';
 
 export default function Gallery() {
+    useEffect(() => {
+        // Aguarda o carregamento da página e rola até o final
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, []);
+
     const [activeIndex, setActiveIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
