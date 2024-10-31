@@ -7,7 +7,7 @@
 /* Seção hero - A primeira parte do site */
 .hero {
     background: radial-gradient(circle, #13072e);
-    padding: 50px 0;
+    padding: 100px 0;
     color: white;
 }
 
