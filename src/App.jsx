@@ -5,7 +5,7 @@ import Header from './components/header/header';
 import Footer from './components/Footer/Footer';
 import TheftReport from './components/theftReport/TheftReport';
 import Carrossel from './components/carousel/Carousel';
-import NewPage from './components/NewPage/NewPage';
+import NewPage from './components/newPage/graficoAis';
 
 const App = () => {
   return (
