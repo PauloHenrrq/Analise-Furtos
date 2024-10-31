@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import NewPage from '../newPage/graficoAis';
+import NewPage from '../graficoAIS/graficoAis';
 
 const Header = () => {
   return (

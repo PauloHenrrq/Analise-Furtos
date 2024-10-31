@@ -1,10 +1,11 @@
+/* Estilos base para o contêiner de relatórios */
 .theft-report-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Seção hero - A primeira parte do site */
+/* Seção hero - Primeira parte da página */
 .hero {
     background: radial-gradient(circle, #13072e);
     padding: 100px 0;
@@ -53,10 +54,29 @@
     transition: background-color 0.3s ease;
 }
 
-
 .btn-schedule:hover {
     background-color: #262177;
     color: #ffff;
     text-decoration: underline;
     text-decoration-color: #ffffff;
+}
+
+/* Ajustando rotação fixa para as imagens com base no tamanho da tela */
+.slide {
+    transform-origin: 0% 2300px;
+}
+
+/* ângulos fixos para as imagens de acordo com a posição */
+@media (max-width: 767px) { /* Para telas menores */
+    .slide:nth-child(1) { transform: rotate(0deg); }
+    .slide:nth-child(2) { transform: rotate(10deg); }
+    .slide:nth-child(3) { transform: rotate(20deg); }
+    .slide:nth-child(4) { transform: rotate(30deg); }
+} 
+
+@media (min-width: 768px) { /* Para telas maiores */
+    .slide:nth-child(1) { transform: rotate(-10deg); }
+    .slide:nth-child(2) { transform: rotate(4deg); }
+    .slide:nth-child(3) { transform: rotate(18deg); }
+    .slide:nth-child(4) { transform: rotate(32deg); }
 }

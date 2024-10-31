@@ -1,6 +1,6 @@
 // src/pages/NewPage.js
 import React from 'react';
-import './NewPage.css';
+import './graficoAis.css';
 
 const aisData = [
   { id: 1, nome: "AIS 1", link: "https://site-oficial-ais1.com" },
@@ -9,7 +9,7 @@ const aisData = [
   // Adicione mais AIS conforme necessário
 ];
 
-const NewPage = () => {
+const graficoAIS = () => {
   
 
   return (
@@ -19,4 +19,4 @@ const NewPage = () => {
   );
 };
 
-export default NewPage;
+export default graficoAIS;
