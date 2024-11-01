@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import NewPage from '../graficoAIS/graficoAis';
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
       <div className="container">
         <div className="navbar">
           <div className="logo-section">
-            {/* Logo ou conteúdo adicional */}
+
           </div>
           <nav>
             <ul className="nav-links">

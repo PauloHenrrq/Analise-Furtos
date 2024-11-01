@@ -5,7 +5,7 @@ import Header from './components/header/header';
 import Footer from './components/Footer/Footer';
 import TheftReport from './components/theftReport/TheftReport';
 import Carrossel from './components/carousel/Carousel';
-import graficoAIS from './components/graficoAIS/graficoAis';
+import GraficoAIS from './components/graficoAis/graficoAis';
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<TheftReport />} />
             <Route path="/carrossel" element={<Carrossel />} />
-            <Route path="/nova-pagina" element={<graficoAIS />} />
+            <Route path="/nova-pagina" element={<GraficoAIS />} />
           </Routes>
         </div>
         <Footer />
