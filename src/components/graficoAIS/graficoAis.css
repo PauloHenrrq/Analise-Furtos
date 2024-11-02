@@ -1,36 +1,87 @@
-/* src/pages/NewPage.css */
+.graphicMain {
+  margin: 2rem 3rem;
 
-.new-page-container {
-    padding: 20px;
+  h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
     text-align: center;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
-  
-  .ais-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+
+  .graphicCard {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
   }
-  
-  .ais-table th, .ais-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 400px;
+  border: 2px solid #443ad4;
+  border-radius: 0 50px;
+  overflow: hidden;
+  transition: border-radius 1s ease, transform 0.3s ease;
+}
+
+.cards:hover {
+  border-radius: 15px;
+  transform: scale(1.10);
+}
+
+.cardsTitle {
+  width: 100%;
+  color: #ffffff;
+  border-radius: 0 0 0 5px;
+  background-color: #13072eb2;
+  height: 10%;
+  text-align: center;
+  padding-top: 8px;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
   }
+}
+
+.cardsSubTitle {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.cards:hover .cardsSubTitle {
+  opacity: 1;
   
-  .ais-table th {
-    background-color: #f4f4f4;
+}
+
+.cardsTitle, .cardsSubTitle {
+  width: 100%;
+  color: #ffffff;
+  border-radius: 0 0 0 5px;
+  background-color: #13072eb2;
+  height: 10%;
+  text-align: center;
+  padding-top: 8px;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: underline;
   }
-  
-  .action-btn {
-    margin: 0 5px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .action-btn:hover {
-    background-color: #0056b3;
-  }
-  
+}

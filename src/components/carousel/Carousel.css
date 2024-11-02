@@ -1,17 +1,62 @@
 .carousel-container {
     position: relative;
     background: radial-gradient(circle, #13072e);
+    margin-top: 2rem;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        color: #ffffff;
+        font-size: 3.5rem;
+        padding-top: 10px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-weight: bold;
+    }
 }
 
-.carousel-container h1 {
-    margin: 0;
-    text-align: center;
+.alert {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #151242e0;
     color: #ffffff;
-    font-size: 3.5rem;
-    padding-top: 10px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadeIn 1s ,fadeOut 0.5s 3.5s;
+}
+
+.loading-bar {
+    border-radius: 5px;
+    height: 5px;
+    left: 0;
+    background-color: #443ad4;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    animation: loading 4s forwards;
+}
+
+@keyframes loading {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 .galleryPrincipal {
@@ -20,11 +65,14 @@
 
     .galleryExtra {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        position: relative;
 
         img {
             margin: auto;
             max-height: 550px;
+            cursor: pointer;
         }
     }
 }

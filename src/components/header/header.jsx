@@ -13,8 +13,8 @@ const Header = () => {
           <nav>
             <ul className="nav-links">
               <li><Link to="/">Início</Link></li>
-              <li><Link to="/carrossel">Gráficos Gerais</Link></li>
-              <li><Link to="/nova-pagina">Gráficos AIS</Link></li>
+              <li><Link to="/GraficoGerais">Gráficos Gerais</Link></li>
+              <li><Link to="/GraficoAIS">Gráficos AIS</Link></li>
             </ul>
           </nav>
         </div>
