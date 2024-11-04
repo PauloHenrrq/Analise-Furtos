@@ -17,6 +17,10 @@
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+
+    .cardsLink {
+      text-decoration: none;
+    }
   }
 }
 
@@ -55,6 +59,7 @@
     font-weight: 700;
     font-size: 18px;
     font-style: normal;
+    text-decoration: 4px solid black;
   }
 }
 
@@ -65,10 +70,10 @@
 
 .cards:hover .cardsSubTitle {
   opacity: 1;
-  
 }
 
-.cardsTitle, .cardsSubTitle {
+.cardsTitle,
+.cardsSubTitle {
   width: 100%;
   color: #ffffff;
   border-radius: 0 0 0 5px;

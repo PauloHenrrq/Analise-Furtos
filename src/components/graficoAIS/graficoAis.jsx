@@ -16,16 +16,16 @@ import ais_10 from '../../assets/ais/ais_10.png'
 const GraficoAIS = () => {
 
   const imageUrls = [
-    { card: ais_01, title: '01',link: ''},
-    { card: ais_02, title: '02',link: ''},
-    { card: ais_03, title: '03',link: ''},
-    { card: ais_04, title: '04',link: ''},
-    { card: ais_05, title: '05',link: ''},
-    { card: ais_06, title: '06',link: ''},
-    { card: ais_07, title: '07',link: ''},
-    { card: ais_08, title: '08',link: ''},
-    { card: ais_09, title: '09',link: ''},
-    { card: ais_10, title: '10',link: ''}
+    { card: ais_01, title: '01', link: '/ais/01' },
+    { card: ais_02, title: '02', link: '/ais/02' },
+    { card: ais_03, title: '03', link: '/ais/03' },
+    { card: ais_04, title: '04', link: '/ais/04' },
+    { card: ais_05, title: '05', link: '/ais/05' },
+    { card: ais_06, title: '06', link: '/ais/06' },
+    { card: ais_07, title: '07', link: '/ais/07' },
+    { card: ais_08, title: '08', link: '/ais/08' },
+    { card: ais_09, title: '09', link: '/ais/09' },
+    { card: ais_10, title: '10', link: '/ais/10' }
   ]
 
   return (
@@ -33,23 +33,21 @@ const GraficoAIS = () => {
       <h1>Gráficos AIS</h1>
       <div className="graphicCard">
         {imageUrls.map((url, index) => (
-          <div className="cards" 
-          key={index}
-          style={{
-            backgroundImage: `url(${url.card})`
-            
-          }}
-          >
-            <div className='cardsTitle'>
-              <h1>AIS {url.title}</h1>
+          <Link to={url.link} key={index} className="cardsLink">
+            <div className="cards"
+              style={{
+                backgroundImage: `url(${url.card})`
+              }}
+            >
+              <div className='cardsTitle'>
+                <h1>AIS {url.title}</h1>
+              </div>
+              <div className='cardsSubTitle'>
+                <h2>Ver mais</h2>
+              </div>
             </div>
-            <div className='cardsSubTitle'>
-              <h2>Ver mais</h2>
-            </div>
-
-          </div>
+          </Link>
         ))}
-
       </div>
     </div>
   );

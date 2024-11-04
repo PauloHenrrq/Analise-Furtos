@@ -2,7 +2,7 @@
     position: absolute;
     left: 25%;
     top: 30%;
-    background-color: #222142;
+    background-color: #55258b;
     border-radius: 10px;
     width: 50%;
     display: grid;
@@ -14,16 +14,16 @@
         font-size: 40px;
         line-height: 66px;
         letter-spacing: 1px;
-        color: var();
+        color: #ffffff;
     }
 
     a {
-        background-color: var(--primary);
+        background-color: rgb(46, 14, 83);
         transition: 0.5s;
         button {
             width: 100%;
             background-color: var(--primary);
-            color: var(--white);
+            color: #ffffff;
             font-weight: bold;
             font-size: 14px;
             transition: 0.5s;
@@ -33,5 +33,5 @@
 }
 
 .NotFoundPrincipal a button:hover {
-    background-color: var(--tertiary);
+    background-color: #35224e;
 }

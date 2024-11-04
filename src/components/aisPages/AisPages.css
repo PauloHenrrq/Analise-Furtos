@@ -1,0 +1,271 @@
+.pageMain {
+    margin: 2rem 3rem;
+
+    .pageTitle {
+
+
+        .pageBack {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            background-color: rgb(21, 6, 41);
+            border: none;
+            border-radius: 15px;
+            transition: ease 0.3s;
+
+            .voltar {
+                position: relative;
+                right: 5px;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                font-style: italic;
+                padding: 8px 10px 0 0;
+                color: #443ad4;
+            }
+
+            .setaVoltar {
+                width: 50px;
+            }
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            color: #ffffff;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+    }
+
+    .cardsMain {
+        margin-top: 20px;
+
+        .cardsPrimary {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .cardsPage {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 400px;
+            border: 2px solid #443ad4;
+            border-radius: 25px;
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+    }
+}
+
+.pageLink {
+    text-decoration: none;
+}
+
+.voltar {
+    opacity: 0.8;
+    transition: ease 0.3s;
+}
+
+.avancar {
+    opacity: 0.8;
+    transition: ease 0.3s;
+}
+
+.setaVoltar {
+    opacity: 0.8;
+    transition: ease 0.3s;
+}
+
+.pageBack:hover .voltar {
+    opacity: 1;
+}
+
+.pageBack:hover .setaVoltar {
+    opacity: 1;
+    transform: translateX(-8px);
+}
+
+.cardsPage:hover {
+    z-index: 10;
+    transform: scale(1.08);
+}
+
+.cardsPageTitle {
+    width: 100%;
+    color: #ffffff;
+    border-radius: 0 0 0 5px;
+    background-color: #13072eb2;
+    height: 10%;
+    text-align: center;
+    padding-top: 8px;
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        font-style: normal;
+        text-decoration: 4px solid black;
+    }
+}
+
+.cardsPageSubTitle {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cardsPage:hover .cardsPageSubTitle {
+    opacity: 1;
+}
+
+.cardsPageTitle,
+.cardsPageSubTitle {
+    width: 100%;
+    color: #ffffff;
+    border-radius: 0 0 0 5px;
+    background-color: #13072eb2;
+    height: 10%;
+    text-align: center;
+    padding-top: 8px;
+
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        font-style: normal;
+        text-decoration: underline;
+    }
+}
+
+.mapMain {
+    margin-top: 5px;
+    text-align: center;
+
+    iframe {
+        width: 100%;
+        height: 570px;
+    }
+}
+
+.divBackNext {
+    display: flex;
+    justify-content: space-between;
+
+    .buttonBack {
+        display: flex;
+        align-items: center;
+        background-color: rgb(21, 6, 41);
+        border: none;
+        border-radius: 15px;
+        transition: ease 0.3s;
+
+        .voltar {
+            position: relative;
+            right: 5px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            font-style: italic;
+            padding: 8px 10px 0 0;
+            color: #443ad4;
+        }
+
+        .setaVoltar {
+            width: 50px;
+        }
+    }
+
+    .buttonNext {
+        display: flex;
+        align-items: center;
+        background-color: rgb(21, 6, 41);
+        border: none;
+        border-radius: 15px;
+        transition: ease 0.3s;
+
+        .avancar {
+            position: relative;
+            left: 5px;
+            margin-left: 10px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            font-style: italic;
+            padding: 8px 10px 0 0;
+            color: #443ad4;
+        }
+
+        .setaVoltar {
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.buttonBack:hover .voltar {
+    opacity: 1;
+}
+
+.buttonBack:hover .setaVoltar {
+    opacity: 1;
+    transform: translateX(-8px);
+}
+
+.buttonNext:hover .avancar {
+    opacity: 1;
+}
+
+.buttonNext:hover .setaVoltar {
+    opacity: 1;
+    transform: translateX(8px);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.expandedImage {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.5s ease;
+    animation: expandToCenter 0.5s forwards;
+}
+
+.expandedArrow {
+    position: relative;
+    transition: transform 0.5s ease;
+    animation: expandToCenter 0.5s forwards;
+    cursor: pointer;
+}
+
+@keyframes expandToCenter {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

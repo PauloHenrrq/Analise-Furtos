@@ -1,3 +1,41 @@
+.modal-content {
+    background: radial-gradient(circle, #13072e, black);
+    bottom: 40px;
+
+    .modal-header {
+        border-bottom: 0;
+
+        .btn-close {
+            opacity: 0.6;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23443ad4'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
+            );
+        }
+
+        .btn-close:hover {
+            opacity: 1;
+        }
+    }
+
+    .modal-body {
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .modal-footer {
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        font-style: normal;
+        border-top: 1px solid #443ad4;
+        justify-content: start;
+    }
+
+}
+
 .carousel-container {
     position: relative;
     background: radial-gradient(circle, #13072e);
@@ -8,7 +46,6 @@
         text-align: center;
         color: #ffffff;
         font-size: 3.5rem;
-        padding-top: 10px;
         text-transform: uppercase;
         line-height: 1.2;
         font-weight: bold;
@@ -36,6 +73,7 @@
 .loading-bar {
     border-radius: 5px;
     height: 5px;
+    right: 30px;
     left: 0;
     background-color: #443ad4;
     width: 100%;
@@ -74,6 +112,14 @@
             max-height: 550px;
             cursor: pointer;
         }
+    }
+}
+
+.infoTitle {
+    font-size: 15px;
+
+    strong {
+        font-size: 25px;
     }
 }
 
