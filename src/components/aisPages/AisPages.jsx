@@ -30,7 +30,12 @@ import g1AIS10 from '../../assets/Graficos/Graficos AIS/AIS 10/grafico1.png'
 import g2AIS10 from '../../assets/Graficos/Graficos AIS/AIS 10/grafico2.png'
 
 export default function AISPage() {
-    const [activeIndex, setActiveIndex] = useState(-1);
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setActiveIndex(0)
+    };
 
     const handleCardClick = (img) => {
         setActiveIndex(img);
@@ -150,15 +155,15 @@ export default function AISPage() {
                 <iframe src={currentData.maps} title="Mapa"></iframe>
             </div>
 
-            <div className="divBackNext" style={{ 
+            <div className="divBackNext" style={{
                 display: 'flex',
                 justifyContent: number === '01' ? 'end' : ''
             }}>
-                <button className="buttonBack" style={{ display: number === '01' ? 'none' : '' }}>
+                <button className="buttonBack" style={{ display: number === '01' ? 'none' : '' }} onClick={() => scrollToTop()}>
                     <img src={setaVoltar} alt="Botão para voltar de página" className='setaVoltar' />
                     <Link to={`/ais/${(currentNumber - 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='voltar' >Voltar AIS</h3></Link>
                 </button>
-                <button className="buttonNext" style={{ display: number === '10' ? 'none' : '' }}>
+                <button className="buttonNext" style={{ display: number === '10' ? 'none' : '' }} onClick={() => scrollToTop()}>
                     <Link to={`/ais/${(currentNumber + 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='avancar'>Avançar AIS</h3></Link>
                     <img src={setaAvancarModal} alt="Botão para voltar de página" className='setaVoltar' />
                 </button>

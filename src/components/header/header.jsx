@@ -15,6 +15,7 @@ const Header = () => {
               <li><Link to="/">Início</Link></li>
               <li><Link to="/GraficoGerais">Gráficos Gerais</Link></li>
               <li><Link to="/GraficoAIS">Gráficos AIS</Link></li>
+              <li><Link to="https://www.supesp.ce.gov.br/areas-integradas-de-seguranca-ais/" target='_blank'>SUPESP</Link></li>
             </ul>
           </nav>
         </div>
