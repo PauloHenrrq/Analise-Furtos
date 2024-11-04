@@ -150,12 +150,15 @@ export default function AISPage() {
                 <iframe src={currentData.maps} title="Mapa"></iframe>
             </div>
 
-            <div className="divBackNext">
-                <button className="buttonBack">
+            <div className="divBackNext" style={{ 
+                display: 'flex',
+                justifyContent: number === '01' ? 'end' : ''
+            }}>
+                <button className="buttonBack" style={{ display: number === '01' ? 'none' : '' }}>
                     <img src={setaVoltar} alt="Botão para voltar de página" className='setaVoltar' />
-                    <Link to={`/ais/${(currentNumber - 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='voltar'>Voltar AIS</h3></Link>
+                    <Link to={`/ais/${(currentNumber - 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='voltar' >Voltar AIS</h3></Link>
                 </button>
-                <button className="buttonNext">
+                <button className="buttonNext" style={{ display: number === '10' ? 'none' : '' }}>
                     <Link to={`/ais/${(currentNumber + 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='avancar'>Avançar AIS</h3></Link>
                     <img src={setaAvancarModal} alt="Botão para voltar de página" className='setaVoltar' />
                 </button>
@@ -168,10 +171,14 @@ export default function AISPage() {
                         <img src={setaVoltarModal} alt="Seta de Regredir" className={`expandedArrow`} onClick={prevImage}
                             style={{
                                 display: activeIndex === 0 ? 'none' : '',
-                                right: activeIndex === 1 ? '30px' : ''
+                                right: activeIndex === 1 ? '90px' : ''
                             }} />
 
-                        <img src={currentData.imgs[activeIndex]} alt="Gráfico expandido" className="expandedImage" />
+                        <img src={currentData.imgs[activeIndex]} alt="Gráfico expandido" className="expandedImage"
+                            style={{
+                                position: 'relative',
+                                right: activeIndex === 1 ? '60px' : '0',
+                            }} />
 
                         <img src={setaAvancarModal} alt="Seta de Avançar" className={`expandedArrow`} onClick={nextImage}
                             style={{
