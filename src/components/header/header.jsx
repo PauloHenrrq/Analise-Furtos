@@ -6,7 +6,7 @@ import './header.css';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from '../../assets/barra-de-menu.png';
 
-const Header = () => {
+export default function Header() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -52,5 +52,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;
