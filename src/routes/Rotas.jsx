@@ -8,7 +8,6 @@ import PageNotFound from '../components/pageNotFound/PageNotFound'
 import AISPage from "../components/aisPages/AisPages";
 
 export default function Rotas() {
-
     return (
         <Routes>
             <Route element={<TheftReport />} path="/" exact />

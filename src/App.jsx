@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import Rotas from './routes/Rotas';
-import Header from './components/header/Header';
+import Header from './components/head/Head';
 
 const App = () => {
   return (
