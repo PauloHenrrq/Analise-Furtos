@@ -7,7 +7,7 @@ import Rotas from './routes/Rotas';
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <div className="app-container">
         <Header />
         <main className="content">
@@ -15,7 +15,7 @@ const App = () => {
         </main>
         <Footer />
       </div>
-    </>
+    </BrowserRouter>
   );
 };
 
