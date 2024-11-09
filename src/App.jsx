@@ -7,7 +7,10 @@ import Header from './components/head/Head';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,
+    }}>
       <div className="app-container">
         <Header />
         <main className="content">

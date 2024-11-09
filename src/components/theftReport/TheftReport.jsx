@@ -6,7 +6,7 @@ const TheftReport = () => {
   return (
     <div className="theft-report-container">
       <section className="hero">
-        <div className="container hero-content">
+        <div className="hero-content">
           <div className="hero-text">
             <h1 className="subtitle">RELATÓRIO DE FURTOS<br /> EM FORTALEZA</h1>
             <p>
