@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
-import './header.css';
+import './Header.css';
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from '../../assets/barra-de-menu.png';
