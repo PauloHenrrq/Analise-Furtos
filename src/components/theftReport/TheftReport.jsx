@@ -1,8 +1,8 @@
 import React from 'react';
 import './TheftReport.css';
 
-
 const TheftReport = () => {
+
   return (
     <div className="theft-report-container">
       <section className="hero">

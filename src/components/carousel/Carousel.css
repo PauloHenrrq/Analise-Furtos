@@ -8,7 +8,7 @@
         .btn-close {
             opacity: 0.6;
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23443ad4'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
-            );
+                );
         }
 
         .btn-close:hover {
@@ -67,7 +67,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    animation: fadeIn 1s ,fadeOut 0.5s 3.5s;
+    animation: fadeIn 1s, fadeOut 0.5s 3.5s;
 }
 
 .loading-bar {
@@ -83,22 +83,37 @@
 }
 
 @keyframes loading {
-    from { width: 0%; }
-    to { width: 100%; }
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 .galleryPrincipal {
-    height: 655px;
+    height: 620px;
     padding: 50px 0 0 0;
 
     .galleryExtra {
@@ -109,6 +124,7 @@
 
         img {
             margin: auto;
+            max-width: 90%;
             max-height: 550px;
             cursor: pointer;
         }
@@ -138,7 +154,7 @@ a .carousel-control-next-icon,
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 33px;
+    margin-bottom: 0;
 }
 
 .indicator-btn {
@@ -152,4 +168,71 @@ a .carousel-control-next-icon,
 
 .indicator-btn.active {
     background-color: #443ad4;
+}
+
+@media (max-width: 1024px) {
+
+    .modal-body,
+    .modal-footer {
+        font-size: 16px;
+    }
+
+    .carousel-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .galleryPrincipal {
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container h1 {
+        font-size: 2rem;
+    }
+
+    .modal-body,
+    .modal-footer {
+        font-size: 15px;
+    }
+
+    .galleryPrincipal {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .galleryExtra img {
+        max-height: 400px;
+    }
+
+    .alert {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .modal-body,
+    .modal-footer {
+        font-size: 14px;
+    }
+
+    .galleryExtra img {
+        max-height: 250px;
+    }
+
+    .alert {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .btn-close {
+        width: 30px;
+        height: 30px;
+    }
 }

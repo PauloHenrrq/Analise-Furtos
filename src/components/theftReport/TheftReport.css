@@ -1,13 +1,12 @@
-/* Estilos base para o contêiner de relatórios */
 .theft-report-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 10px;
 }
 
-/* Seção hero - Primeira parte da página */
 .hero {
-    background: radial-gradient(circle, #13072e);
     padding: 50px 0;
     color: white;
 }
@@ -22,6 +21,7 @@
 
 .hero-text {
     max-width: 55%;
+    flex: 1;
 }
 
 .hero-text h1 {
@@ -37,8 +37,15 @@
     margin-bottom: 30px;
 }
 
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-image img {
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     border-radius: 15px;
 }
@@ -46,7 +53,7 @@
 .btn-schedule {
     padding: 15px 30px;
     background-color: #443ad4;
-    color: #ffff;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
@@ -56,7 +63,65 @@
 
 .btn-schedule:hover {
     background-color: #262177;
-    color: #ffff;
+    color: #fff;
     text-decoration: underline;
     text-decoration-color: #ffffff;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .btn-schedule {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .Corte {
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.75rem;
+    }
+
+    .btn-schedule {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
 }

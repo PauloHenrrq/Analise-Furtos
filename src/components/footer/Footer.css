@@ -1,8 +1,7 @@
 .footer {
-    background: radial-gradient(circle, #13072e);
     text-align: center;
 
-    .container {
+    .container-footer {
         p {
             margin: 10px 0 0 0;
         }
