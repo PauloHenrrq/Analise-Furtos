@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css'
+import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import Header from './components/header/header.jsx';
+import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Rotas from './routes/Rotas.jsx';
 
@@ -10,9 +10,9 @@ const App = () => {
     <BrowserRouter>
       <div className="app-container">
         <Header />
-        <div className="content">
+        <main className="content">
           <Rotas />
-        </div>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>
