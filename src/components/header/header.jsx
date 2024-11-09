@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import OffcanvasBody from 'react-bootstrap/OffcanvasBody'
-import Button from '../../assets/barra-de-menu.png'
+import Button from '../../assets/barra-de-menu.png';
 
 const Header = () => {
   const [show, setShow] = useState(false);
