@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './graficoAis.css';
+import './GraficoAIS.css';
 
 import ais_01 from '../../assets/ais/ais_01.png'
 import ais_02 from '../../assets/ais/ais_02.png'
