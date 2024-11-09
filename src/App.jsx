@@ -8,15 +8,13 @@ import Rotas from './routes/Rotas';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <div className="app-container">
-          <Header />
-          <main className="content">
-            <Rotas />
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
+      <div className="app-container">
+        <Header />
+        <main className="content">
+          <Rotas />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };
