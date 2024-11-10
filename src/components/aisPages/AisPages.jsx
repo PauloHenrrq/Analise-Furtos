@@ -159,14 +159,14 @@ export default function AISPage() {
                 display: 'flex',
                 justifyContent: number === '01' ? 'end' : ''
             }}>
-                <button className="buttonBack" style={{ display: number === '01' ? 'none' : '' }} onClick={() => scrollToTop()}>
+                <Link to={`/ais/${(currentNumber - 1).toString().padStart(2, '0')}`} className='pageLink'><button className="buttonBack" style={{ display: number === '01' ? 'none' : '' }} onClick={() => scrollToTop()}>
                     <img src={setaVoltar} alt="Botão para voltar de página" className='setaVoltar' />
-                    <Link to={`/ais/${(currentNumber - 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='voltar' >Voltar AIS</h3></Link>
-                </button>
-                <button className="buttonNext" style={{ display: number === '10' ? 'none' : '' }} onClick={() => scrollToTop()}>
-                    <Link to={`/ais/${(currentNumber + 1).toString().padStart(2, '0')}`} className='pageLink'><h3 className='avancar'>Avançar AIS</h3></Link>
+                    <h3 className='voltar' >Voltar AIS</h3>
+                </button></Link>
+                <Link to={`/ais/${(currentNumber + 1).toString().padStart(2, '0')}`} className='pageLink'><button className="buttonNext" style={{ display: number === '10' ? 'none' : '' }} onClick={() => scrollToTop()}>
+                    <h3 className='avancar'>Avançar AIS</h3>
                     <img src={setaAvancarModal} alt="Botão para voltar de página" className='setaVoltar' />
-                </button>
+                </button></Link>
             </div>
 
 
