@@ -176,19 +176,19 @@ export default function AISPage() {
                         <img src={setaVoltarModal} alt="Seta de Regredir" className={`expandedArrow`} onClick={prevImage}
                             style={{
                                 display: activeIndex === 0 ? 'none' : '',
-                                right: activeIndex === 1 ? '90px' : ''
+                                left: activeIndex === 1 ? '38px' : ''
                             }} />
 
                         <img src={currentData.imgs[activeIndex]} alt="Gráfico expandido" className="expandedImage"
                             style={{
                                 position: 'relative',
-                                right: activeIndex === 1 ? '60px' : '0',
+                                left: activeIndex === 1 ? '40px' : '80px',
                             }} />
 
                         <img src={setaAvancarModal} alt="Seta de Avançar" className={`expandedArrow`} onClick={nextImage}
                             style={{
                                 display: activeIndex === 1 ? 'none' : '',
-                                left: activeIndex === 0 ? '30px' : ''
+                                left: activeIndex === 0 ? '80px' : ''
                             }} />
                     </div>
                 </div>
