@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './AisPages.css';
 
@@ -36,6 +36,10 @@ export default function AISPage() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         setActiveIndex(0)
     };
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
 
     const handleCardClick = (img) => {
         setActiveIndex(img);
