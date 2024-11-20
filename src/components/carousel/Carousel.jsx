@@ -46,8 +46,6 @@ export default function Gallery() {
     const [showAlert, setShowAlert] = useState(false);
 
     useEffect(() => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-
         setShowAlert(true);
 
         const timer = setTimeout(() => {

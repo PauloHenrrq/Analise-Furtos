@@ -66,7 +66,7 @@ export default function AISPage() {
     const aisData = {
         '01': {
             imgs: [g1AIS1, g2AIS1],
-            maps: 'https://www.google.com/maps/d/embed?mid=18oV5NLjqxHMuPC50LH51fMqZWN0JdpAC&ehbc=2E312F'
+            maps: 'https://www.google.com/maps/d/embed?mid=17gPLZy8MY0jAaIx7zS-KHoM-vF5R5X10&ehbc=2E312F'
         },
         '02': {
             content: 'Conteúdo para AIS 01',
