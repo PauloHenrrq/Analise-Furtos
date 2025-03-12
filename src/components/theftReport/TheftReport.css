@@ -1,126 +1,152 @@
 .theft-report-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .hero {
-    padding: 50px 0;
-    color: white;
+  padding: 50px 0;
+  color: white;
 }
 
 .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 85%;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85%;
+  margin: auto;
 }
 
 .hero-text {
-    max-width: 55%;
-    flex: 1;
+  max-width: 55%;
+  flex: 1;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.btn-schedule {
+  padding: 15px 30px;
+  background-color: #443ad4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-schedule:hover {
+  background-color: #262177;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+@media (min-width: 1524px) {
+
+  .hero-text {
+    max-width: 55%;
+    flex: 1;
+  }
+
+  .hero-text h1 {
+    font-size: 5.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     line-height: 1.2;
     font-weight: bold;
-}
+  }
 
-.hero-text p {
-    font-size: 1.25rem;
+  .hero-text p {
+    font-size: 1.75rem;
     margin-bottom: 30px;
-}
+  }
 
-.hero-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.hero-content img {
-    max-width: 100%;
+  .hero-content img {
+    width: 350px;
     height: auto;
-    border-radius: 15px;
-}
-
-.btn-schedule {
-    padding: 15px 30px;
-    background-color: #443ad4;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.btn-schedule:hover {
-    background-color: #262177;
-    color: #fff;
-    text-decoration: underline;
-    text-decoration-color: #ffffff;
-}
-
-.footer {
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto;
+  }
 }
 
 @media (max-width: 1024px) {
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
 
-    .hero-text p {
-        font-size: 1.1rem;
-    }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
 
-    .btn-schedule {
-        font-size: 1rem;
-        padding: 12px 24px;
-    }
+  .btn-schedule {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hero-text {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 
-    .hero-content img {
-        padding-top: 50px;
-        margin-top: 20px;
-    }
+  .hero-content img {
+    padding-top: 50px;
+    margin-top: 20px;
+  }
 
-    .hero-text h1 {
-        font-size: 2rem;
-    }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
 
-    .hero-text p {
-        font-size: 1rem;
-    }
+  .hero-text p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 1.75rem;
-    }
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
 
-    .btn-schedule {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-    }
+  .btn-schedule {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
 }

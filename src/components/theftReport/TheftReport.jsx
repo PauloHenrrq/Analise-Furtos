@@ -17,7 +17,7 @@ const TheftReport = () => {
             </p>
             <a href="https://colab.research.google.com/drive/1Ig9-MdZs79C9ZDlt_Y16HaVQdsC_M8eT?usp=sharing" target='_blank' className="btn-schedule">VER DADOS</a>
           </div>
-          <img className="" src={PM} style={{ width: "250px", height: "auto", marginTop: "-26px" }} alt="Logo da PMCE" />
+          <img className="" src={PM} alt="Logo da PMCE" />
         </div>
       </section>
     </div>
