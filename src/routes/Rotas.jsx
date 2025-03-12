@@ -14,7 +14,7 @@ export default function Rotas() {
             <Route element={<Carrossel />} path="/GraficoGerais" />
             <Route element={<GraficoAIS />} path="/GraficoAIS" />
             <Route element={<AISPage />} path="/ais/:number" />
-            <Route element={<PageNotFound />} path="/error" />
+            <Route element={<PageNotFound />} path="*" />
         </Routes>
     )
 }
